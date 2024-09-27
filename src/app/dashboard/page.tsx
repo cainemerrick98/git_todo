@@ -18,7 +18,14 @@ const todos: TodoData[] = [
         repo:'caine',
         file:'caine',
         due_date:new Date(),
-        status:'In Progress',
+        status:'Awaiting',
+    },
+    {
+        title:'caine',
+        repo:'caine',
+        file:'caine',
+        due_date:new Date(),
+        status:'Complete',
     },
 ]
 

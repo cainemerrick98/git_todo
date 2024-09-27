@@ -1,0 +1,18 @@
+.todo_select{
+    border-radius: 10px;
+}
+
+.complete{
+    background-color: lightgreen;
+    color: green;
+}
+
+.in_progress{
+    background-color: rgb(243, 243, 83);
+    color: darkorange;
+}
+
+.awaiting{
+    background-color: lightgray;
+    color: grey;
+}

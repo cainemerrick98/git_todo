@@ -22,10 +22,19 @@ export default function Todo(data: TodoData){
             </td>
             <td>{due_date.toLocaleDateString()}</td>
             <td>
-                <select>
-                    <option selected={status == 'Awaiting' ? true : false}>Awaiting</option>
-                    <option selected={status == 'In Progress' ? true : false}>In Progress</option>
-                    <option selected={status == 'Complete' ? true : false}>Complete</option>
+                <select 
+                    className={
+                        status === 'Complete' 
+                        ? styles.complete 
+                        : status === 'In Progress'
+                        ? styles.in_progress
+                        : styles.awaiting
+                    }
+                    defaultValue={status}
+                    >
+                    <option value={'Awaiting'}>Awaiting</option>
+                    <option value={'In Progress'}>In Progress</option>
+                    <option value={'Complete'}>Complete</option>
                 </select>
             </td> 
         </tr>
