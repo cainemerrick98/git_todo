@@ -1,4 +1,18 @@
 .todo_table{
     width: 100%;
     text-align: center;
+    border-collapse: collapse;
+}
+
+.todo_table th{
+    padding: 10px;
+}
+
+.todo_table td{
+    padding: 10px;
+    
+}
+
+.todo_table tr{
+    border-bottom: 1px solid;
 }

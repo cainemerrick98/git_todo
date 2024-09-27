@@ -1,6 +1,9 @@
 import TodoTable from '@/app/ui/dashboard/todo_table'
+import Sidebar from '../ui/dashboard/sidebar'
+import Toolbar from '../ui/dashboard/toolbar'
 import { TodoData } from '../lib/models'
 import styles from '@/app/ui/dashboard/dashboard.module.css'
+
 
 const todos: TodoData[] = [
     {
@@ -22,9 +25,14 @@ const todos: TodoData[] = [
 export default function Page(){
     return(
         <div className={styles.dashboard_container}>
-            <h1>GitTodo</h1>
-            <div className={styles.todotable_container}>
-                <TodoTable rows={todos}></TodoTable>
+            <Sidebar></Sidebar>
+            <div className={styles.main_container}>
+                <div className={styles.toolbar_container}>
+                    <Toolbar></Toolbar>
+                </div>
+                <div className={styles.todotable_container}>
+                    <TodoTable rows={todos}></TodoTable>
+                </div>
             </div>
         </div>
     )
