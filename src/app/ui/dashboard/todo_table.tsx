@@ -1,6 +1,6 @@
 import Todo from './todo'
 import React from 'react'
-import { TableData, TodoData } from '@/app/lib/models'
+import { TableData, TodoData } from '../../lib/models'
 import styles from './todo_table.module.css'
 
 export default function TodoTable(todos: TableData){

@@ -1,4 +1,4 @@
-import TodoTable from '@/app/ui/dashboard/todo_table'
+import TodoTable from '../ui/dashboard/todo_table'
 import Sidebar from '../ui/dashboard/sidebar'
 import Toolbar from '../ui/dashboard/toolbar'
 import { TodoData } from '../lib/models'

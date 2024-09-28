@@ -1,4 +1,4 @@
-import { TodoData } from "@/app/lib/models"
+import { TodoData } from "../../lib/models"
 import styles from './todo.module.css'
 
 export default function Todo(data: TodoData){
@@ -23,12 +23,12 @@ export default function Todo(data: TodoData){
             <td>{due_date.toLocaleDateString()}</td>
             <td>
                 <select 
-                    className={
+                    className={ `todo_select ${
                         status === 'Complete' 
                         ? styles.complete 
                         : status === 'In Progress'
                         ? styles.in_progress
-                        : styles.awaiting
+                        : styles.awaiting}`
                     }
                     defaultValue={status}
                     >
